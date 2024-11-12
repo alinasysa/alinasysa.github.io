@@ -224,7 +224,7 @@ padding: 100px 0;
 
 }
 .subtitle{
-    background-image: url(/image/vector.png);
+    background-image: url(../image/vector.png);
     background-size: contain;
 }
 
