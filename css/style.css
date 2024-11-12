@@ -1,0 +1,436 @@
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url(../fonts/Lato-Regular.eot);
+    src: url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url(../fonts/Lato-Regular.eot) format('woff'),
+    url(../fonts/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+.jura {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.container_fluid{
+    background-color:rgb(19, 17, 17);
+    background-image: url(../image/bg.png);
+    background-blend-mode: color,luminosity;
+}
+
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: "Lato Regular";
+    padding: 20px 0;
+}
+.open{
+    display: flex!important;
+}
+/* header start*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.header a:hover{
+    color: rgb(180, 172, 250);
+}
+.logo{
+    font-size: 40px;
+    font-family: "Jura", sans-serif;
+}
+.menu{
+    font-size: 18px;
+    line-height: 21.6px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn_lang{
+    max-width: 40px;
+    max-height: 48px;
+    font-size: 14px;
+    font-family: 'Lato Regular';
+    color:rgba(255, 255, 255, 1) ;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    margin-left: 20px;
+    
+}
+.btn_lang:hover{
+    color: rgb(180, 172, 250);
+    border: 1px solid rgb(180, 172, 250);
+}
+.burger{
+    display: none;
+    position: relative;
+    align-items: center;
+    width: 51px;
+    height: 35px;
+    z-index: 10;
+}
+.burger span{
+    width: 51px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1);
+}
+.burger::before, .burger::after{
+    content: "";
+    width: 51px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.burger::before{
+    top: 0;
+}
+.burger::after{
+    bottom: 0;
+}
+.burger.active span{
+    transform: scale(0);
+}
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.btn_message{
+    width: 204px;
+    height: 54px;
+    font-size: 20px;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.btn_message:hover{
+    background-color: rgb(86, 104, 138);
+    color: white;
+}
+
+/* header end*/
+
+/* head_section start*/
+.head_section{
+    padding-bottom: 155px;
+}
+
+.title h1{
+    font-family: "Jura", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 1);
+    max-width: 1015px;
+    
+}
+.title_text{
+    font-family: "Lato Regular";
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 46px;
+    justify-content: space-evenly;
+
+}
+.title_text div{
+    max-width: 575px;
+    font-size: 22px;
+    font-family: 'Lato Regular';
+    color: rgba(255, 255, 255, 1);
+    line-height: 28.16px;
+}
+.btn_start{
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 318px;
+    background-color:rgba(255, 255, 255, 1) ;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    padding: 25px 34px;
+    position: relative;
+}
+.btn_start::before{
+    content: "";
+    width: 318px;
+    height: 78px;
+    border-radius: 50px;
+    border: 1px solid rgba(104, 35, 255, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(5.37deg);
+}
+.btn_start:hover{
+    background-color: rgb(86, 104, 138);
+    color: white;
+}
+.profit{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 85px;
+    margin-right: 85px;
+    padding: 25px 0;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    justify-content: space-around;
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+  
+}
+.profit div{
+    padding: 10px 60px;
+    line-height: 28.16px;
+}
+.profit p{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.profit div:nth-of-type(2){
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* head_section end*/
+
+.subtitle h1{
+color: rgba(0, 0, 0, 1);
+padding: 100px 0;
+
+}
+.subtitle{
+    background-image: url(../image/vector.png);
+    background-size: contain;
+}
+
+
+.wrapp_fluid{
+    background-color:black;
+    padding-bottom: 50px;
+}
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    color: white;
+}
+.card{
+    max-width:690px ;
+    border: 1px solid rgba(104, 35, 255, 1);
+    border-radius: 15px;
+    margin: 20px 5px;
+    font-size: 22px;
+    line-height: 28.16px;
+    padding: 20px 40px 40px;
+    box-sizing: border-box;
+    background-image: url(../image/svg/ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: left 30px top 10px;
+}
+.card h2{
+    font-size: 30px;
+    font-weight:bold;
+    line-height: 35.49px;
+    font-family: "Jura", sans-serif;
+    padding-bottom: 15px;
+}
+.card_white{
+    background-color: white;
+    color: black;
+}
+.footer_btn{
+    text-align: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1599px){
+    .wrapper{
+        max-width: 1200px;
+    }
+    .menu{
+        display: flex;
+    }
+    .head_section{
+        padding-bottom: 110px;
+    }
+    .profit div{
+        padding: 10px 30px;
+    }
+    .card{
+        max-width: 590px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .wrapper{
+        max-width: 768px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: hidden;
+        z-index: 10;
+        background-color: black;
+        padding: 50px 40px;
+        row-gap: 30px;
+        justify-content: start;
+    }
+    .burger{
+        display: flex;
+    }
+    .head_section{
+        padding-bottom: 60px;
+    }
+    .title h1{
+        font-size: 45px;
+    }
+    .title_text{
+        flex-wrap: wrap;
+    }
+    .title_text div{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .profit{
+        flex-wrap: nowrap;
+        margin: 0 45px;
+    }
+    .profit div{
+        padding: 0 10px;
+    }
+    .inner{
+        justify-content: center;
+    }
+    .card{
+        max-width: 590px;
+    }
+    .card:nth-child(odd){
+        background-color: black;
+        color: white;
+    }
+    .card:nth-child(even){
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .wrapper{
+        max-width: 445px;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: hidden;
+        z-index: 10;
+        background-color: black;
+        padding: 50px 40px;
+        row-gap: 30px;
+        justify-content: start;
+    }
+    .btn_message{
+        width: 180px;
+    }
+    .burger{
+        display: flex;
+        margin-left: 20px;
+    }
+    .head_section{
+        padding:30px;
+        line-height: normal;
+        text-align: center;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+    .title_text{
+        flex-wrap: wrap;
+    }
+    .title_text div{
+        padding-bottom: 40px;
+        font-size: 17px;
+    }
+    .profit{
+        margin: 0;
+    }
+    .profit div{
+        padding: 30px 20px;
+    }
+    .profit div:nth-child(2){
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        position: relative;
+    }
+    .profit div:nth-child(2)::after{
+        content: "";
+        width: 240px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 1);
+        top: 0;
+        left: 39px;
+        position: absolute;
+    }
+    .profit div:nth-child(2)::before{
+        content: "";
+        width: 240px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 1);
+        bottom: 0;
+        left: 39px;
+        position: absolute;
+    }
+    .subtitle{
+        background-size: auto;
+    }
+    .card:nth-child(odd){
+        background-color: black;
+        color: white;
+    }
+    .card:nth-child(even){
+        background-color: white;
+        color: black;
+    }
+}
