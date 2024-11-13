@@ -130,7 +130,9 @@
     background-color: rgb(86, 104, 138);
     color: white;
 }
-
+.btn_inner{
+    display: none;
+}
 /* header end*/
 
 /* head_section start*/
@@ -267,7 +269,7 @@ padding: 100px 0;
     text-align: center;
 }
 
-@media (min-width: 1200px) and (max-width: 1599px){
+@media screen and (max-width: 1599px){
     .wrapper{
         max-width: 1200px;
     }
@@ -284,10 +286,10 @@ padding: 100px 0;
         max-width: 590px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px){
+@media screen and (max-width: 1199px){
 
     .wrapper{
-        max-width: 768px;
+        max-width: 690px;
     }
     .menu{
         display: none;
@@ -323,13 +325,12 @@ padding: 100px 0;
         padding: 20px 0;
         text-align: center;
     }
+   
     .profit{
+        margin: 0;
         flex-wrap: nowrap;
-        margin: 0 45px;
     }
-    .profit div{
-        padding: 0 10px;
-    }
+
     .inner{
         justify-content: center;
     }
@@ -346,9 +347,9 @@ padding: 100px 0;
     }
 }
 
-@media (min-width: 480px) and (max-width: 767px){
+@media  screen and (max-width: 767px){
     .wrapper{
-        max-width: 445px;
+        max-width: 440px;
     }
     .logo{
         font-size: 24px;
@@ -372,7 +373,7 @@ padding: 100px 0;
         justify-content: start;
     }
     .btn_message{
-        width: 180px;
+        width: 204px;
     }
     .burger{
         display: flex;
@@ -394,7 +395,7 @@ padding: 100px 0;
         font-size: 17px;
     }
     .profit{
-        margin: 0;
+        flex-wrap: wrap;
     }
     .profit div{
         padding: 30px 20px;
@@ -433,4 +434,15 @@ padding: 100px 0;
         background-color: white;
         color: black;
     }
+}
+@media  screen and (max-width: 439px){
+     .wrapper{
+        max-width: 350px ;
+     }
+     .btn_message{
+        display: none;
+     }
+     .btn_inner{
+        display: block;
+     }
 }
