@@ -449,11 +449,11 @@ padding: 100px 0;
      .btn_inner{
         display: block;
      }
-     .btn_start{
+     .title_text .btn_start{
         padding-top: 10px;
         padding-bottom: 10px;
      }
-     .btn_start::before{
+     .title_text .btn_start::before{
         width: 285px;
      }
 }
