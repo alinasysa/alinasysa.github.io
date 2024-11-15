@@ -373,8 +373,12 @@ padding: 100px 0;
         justify-content: start;
     }
     .btn_message{
-        width: 204px;
-    }
+        display: none;
+     }
+     .btn_inner{
+        display: block;
+     }
+  
     .burger{
         display: flex;
         margin-left: 20px;
